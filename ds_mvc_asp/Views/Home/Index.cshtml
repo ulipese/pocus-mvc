@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    h2 {
+        color: #ff850a;
+        font-weight: 700;
+    }
+    body {
+        background-color: #fff;
+    }
+    .jumbotron {
+        transition: 500ms;
+        background-color: rgba(8, 88, 128, 0.85);
+    }
+    .jumbotron h2 {
+        margin-bottom: 1em;
+    }
+    .jumbotron:hover {
+        background-color: #fff;
+    }
+    .jumbotron:hover h2 {
+        transition: 500ms;
+        color: #F27F0C;
+    }
+    .jumbotron:hover p {
+        transition: 500ms;
+        color: #085880;
+    }
+    p {
+        color: #053F5C;
+    }
+    p.lead {
+        color: white;
+    }
+    .jumbasso {
+        margin-top: 2.3em;
+        cursor: pointer;
+        
+    }
+    .jumba {
+        width: 48.5%;
+        padding: 2em;
+        padding-left: 4em;
+        border-radius: 0.5em;
+    }
+    .jumbas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        transition: 300ms;
+    }
+    .jumbas p {
+        color: white;
+        margin-top: 2em;
+        font-weight: 500;
+    }
+    .jumba1 {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/ImportanceOfFocusImage.png') no-repeat;
+        background-size: cover;
+        transition: 300ms;
+    }
+    .jumba1:hover {
+        background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('/ImportanceOfFocusImage.png') no-repeat;
+        background-size: cover;
+        transition: 300ms;
+    }
+    .jumba2 {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/WhatIsPomodoroImage.png') no-repeat;
+        background-size: cover;
+        transition: 300ms;
+    }
+    .jumba2:hover {
+        background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('/WhatIsPomodoroImage.png') no-repeat;
+        background-size: cover;
+        transition: 300ms;
+    }
+    a.jumbas-link {
+        text-decoration: none;
+    }
+</style>
+<a href="https://github.com/ulipese/pocus-app" class="jumbas-link" target="_blank" rel="noreferrer">
+<div class="jumbotron jumbasso">
+    <h2>O que é Pocus ‎ ‎<img src="~/Vector.svg" width="30px" style="margin-top: -0.1em;"/> </h2>
+    <p class="lead">Nosso app para você se organizar e conseguir focar no que é importante!</p>
+</div>
+</a>
+<div class="jumbas">
+    <div class="jumba jumba1">
+        <!--<img src="~/ImportanceOfFocusImage.png" /> -->
+        <h2>Qual a importância do foco?</h2>
+        <p>
+            O foco é importante para que as atividades do dia a dia sejam feitas de uma forma mais performática e rápida!
+        </p>
+    </div>
+    <div class="jumba jumba2">
+        <!-- <img src="~/WhatIsPomodoroImage.png" /> -->
+        <h2>O que é pomodoro?</h2>
+        <p>
+            É uma técnica de foco e estudo, com ela, você dá um tempinho de descanso para seu cérebro, de forma que você não fique totalemente perdido depois.
+        </p>
+    </div>
+</div>
+
+
+
